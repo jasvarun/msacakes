@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cake Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript">  var appInsights=window.appInsights||function(config){    function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t    }({        instrumentationKey:"53a7ecd4-f43c-4ded-a461-3c0a637ee6c6"    });           window.appInsights=appInsights;    appInsights.trackPageView();</script>
+  </head>
+
+  <body>
+    <main>
+      
+     <div class="navbar navbar-fixed-top navbar-inverse">
+       <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+             <span class="sr-only">Toggle Navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           
+           <a class="navbar-brand" href="index.html">Cakes</span></a>
+         </div>
+         <div class="collapse navbar-collapse" id="navbar-collapse">
+           <ul class="nav navbar-nav navbar-right">
+
+             <li class="active"><a href="#home">Home</a></li>
+             <!--<li><a class="page-scroll" href="#about">About</a></li>-->
+             <li><a class="page-scroll" href="#customizer">Customize</a></li>
+             <li><a class="page-scroll" href="#contact">Contact</a></li>
+             
+           </ul>
+         </div>
+       </div>
+     </div>
+       <section id="home" class="clearfix">      
+         <img class="home-img img-responsive" src="../img/logo.jpg">
+       </section>
+<!--<div class="mylogo">
+         <img scr="../img/logo.png" >
+       </div>-->
+
+       <!--About Page-->
+
+      <!--<section id="about">
+          <div class="container-fluid bg-2">
+            <div class="quote">
+            <p>"The place where you can find the best and fresh bakery food items"</p>
+            </div>
+          </div>
+      </section>-->
+
+      <!--Customizer page-->
+
+          <section id="customizer">
+            <div class="customizer-container ">
+               <div id="page1">
+                 <h1 class="customizer-text">Build your own Cake</h1>
+                 <h2 class="customizer-text">Select Size</h2>
+                 <button type="button" id="btnsizesmall" class="btn btn-danger" name="answer" value="Show Div" onclick="showpage2(), an1()">Small</button>
+                 <button type="button" id="btnsizelarge" class="btn btn-danger" name="answer" value="Show Div" onclick="showpage2(), an1()">Large</button>
+              </div>
+            <div id="page2" style="display:none;">
+                <h1 class="customizer-text">Select Shape</h1>
+                <button type="button" id="btnshapecir" class="btn btn-danger" name="answer" value="Show Div" onclick="showpage3(), an2()">Circular</button>
+                 <button type="button" id="btnshapesq" class="btn btn-danger" name="answer" value="Show Div" onclick="showpage3(),an2()">Square</button>
+
+            </div>
+             <div id="page3" style="display:none;">
+               <h1 class="customizer-text">Select Flavor</h1>
+                 <button type="button" id="btnflvan" class="btn btn-danger" name="answer" value="Show Div" onclick="showpage4(), an3()">Vanilla</button>
+                 <button type="button" id="btnflsb" class="btn btn-danger" name="answer" value="Show Div" onclick="showpage4(), an3()">Strawberry</button>
+                 <button type="button" id="btnflchoc" class="btn btn-danger" name="answer" value="Show Div" onclick="showpage4(), an3()">Chocolate</button>
+                 <button type="button" id="btnflcc" class="btn btn-danger" name="answer" value="Show Div" onclick="showpage4(), an3()">Cookie Cream</button>
+             </div>
+             <div id="page4" style="display:none;">
+               <h1 class="customizer-text">Select Toppings</h1>
+                 <button type="button" id="btntopsp" class="btn btn-warning" name="answer" value="Show Div" onclick="showpage5(), an4()">Sprinkles</button>
+                 <button type="button" id="btntopfr" class="btn btn-warning" name="answer" value="Show Div" onclick="showpage5(), an4()">Fruits</button>
+                 <button type="button" id="btntopcc" class="btn btn-warning" name="answer" value="Show Div" onclick="showpage5(), an4()">Cream and Cherry</button>
+             </div>
+
+             <div id="page5" style="display:none;">
+               <h1 class="customizer-text">Here is your Cake</h1>
+               <button type="button" id="result" class="btn btn-success" name="answer" value="Show Div" onclick="choice()">See it!</button>
+             <div class="cakes-container">
+               
+             <img id="vanimage" class="img-responsive cakes" src="../img/van.jpg" style="display:none;" >
+               
+             </div>
+               
+             </div>
+
+          </section>
+
+      <!--Contact Page-->
+
+      <section id="contact">
+          <div class="contact-container">
+            <div class="contact-text">
+             <h2>Get our handcrafted newsletter</h2>
+             <p class="lead">Seriously, we'll send you real bakery in the mail. We don't do email.</p>
+             </div>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control input-lg" placeholder="Put your real address here...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-warning btn-lg" type="button">Taste it</button>
+                    </span>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+<!-- footer section-->
+
+    <div class="row">
+      <div class="col-sm-4">
+        <h4>Contact Us</h4>
+        <br/>
+        <p><b>Email:</b> jasvaruns@gmail.com</p>
+        <p><b>Address:</b> Auckland, New Zealand</p>
+      </div>
+
+      <div class="col-sm-4">
+        <h4>Find Us</h4>
+        <div id="map" style="width:250px;height:250px;padding-left:20px;"></div>
+      </div>
+
+      <div class="col-sm-4">
+        <h4>Follow Us</h4>
+        </br>
+        <div id="fb-root">
+        <div class="fb-follow" data-href="https://www.facebook.com/jasvaruns" data-width="50px" data-layout="button_count" data-size="small" data-show-faces="true"></div>
+        </br>
+        <div class="fb-share-button" data-href="https://www.facebook.com/jasvaruns" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fjasvaruns&amp;src=sdkpreparse">Share</a></div>
+        </div>
+      </div>
+    </div>
+
+
+          </div>
+      </section>
+   
+        </main>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src='./node_modules/jquery.transit/jquery.transit.js'></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./js/basic.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL_jLnZI-g1012SHTnAMZhsOUm9OinGJ4&callback=myMap"></script>
+        <script src="./js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/VelocityJS/1.2.2/VelocityJS.ui.js"></script>
+        <script src="./node_modules/sweetalert/dist/sweetalert.min.js"></script> <link rel="stylesheet" type="text/css" href="./node_modules/sweetalert/dist/sweetalert.css">
+</script>
+  </body>
+</html>

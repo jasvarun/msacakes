@@ -1,0 +1,238 @@
+body
+{
+    font-family:"Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*::-webkit-scrollbar { 
+    display: none; 
+}*/
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+::-webkit-input-placeholder {
+   color: #FFFFFF;
+   opacity:1;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #FFFFFF;
+   opacity:1; 
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #FFFFFF;
+   opacity:1;
+}
+:-ms-input-placeholder {  
+   color: #FFFFFF; 
+   opacity:1;
+}
+a{text-decoration:none; outline:none}
+ul, li{list-style:none; margin:0; padding:0}
+.float-right{float:right}
+.float-left{float:left}
+.align-center{text-align:center}
+.align-right{text-align:right}
+.align-left{text-align:left}
+.marginL0{margin-left:0!important}
+ul:after, .clear{
+    clear:both; content:""; display:block
+}
+
+
+main section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+
+/*.cover {
+    height: 100%;
+}*/
+
+/*.mylogo{
+    position: fixed;
+    top:2px;
+    left:2px;
+    width: 7px;
+    height: 7px;
+}*/
+
+#home {
+    background-color: #FFFFFF;
+    background-size: cover; 
+    
+    height:100vh    
+    }
+
+.home-img{
+    margin: auto;
+    top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+    
+    
+    /*top: 50%;
+    transform: translateY(-50%);*/
+    
+    
+}
+.cover-text {
+    width: 100%;
+    color: white;
+    /*display: block;*/
+    
+    text-align: center;
+    text-shadow: 2px 2px 8px #000;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.cover-text h1 {
+    font-size: 70px;
+    letter-spacing: -4px;
+    
+}
+.cover-text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px; 
+}
+/*.quote {
+     color: #ffffff;
+    font-size: 25px;
+    font-style: italic;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}*/
+
+/*.bg-2 { 
+    background: url('../img/grey.jpg') no-repeat;
+    box-shadow: inset 0 0 100px #000;
+    height:100vh;
+    width: 100%;
+    background-size: cover;
+}*/
+
+/*.container-fluid {
+    
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}*/
+
+.navbar-inverse {
+    background: rgba( 0, 0, 0, .5);
+    border: none;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 8px #000;
+
+}
+
+#customizer{
+
+    background: url('../img/rest.jpg') no-repeat;
+    box-shadow: inset 0 0 100px #000;
+    height:100vh;
+    background-size: cover;
+    position: relative;
+}
+.customizer-container{
+    
+text-align: center;
+   top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+}
+.customizer-text{
+    color: white;
+    font-size: 50px;
+}
+#contact {
+    height:100vh;
+    background-color: #FFF3D8;
+    margin: auto;
+    width: auto;
+    
+    
+}
+.contact-text{
+    margin-top: 5%;
+}
+
+.contact-container{
+    
+    text-align: center;
+    position: relative;
+    /*top: 50%;
+    transform: translateY(-50%);*/
+    background-color: #FFF3D8;
+    margin: auto;
+    width: auto;
+    height: auto;
+    
+    
+}
+
+.row {
+    margin-top: auto;
+    padding-top: 5%;
+    
+}
+
+
+#map {
+     margin-left:auto;
+     margin-right:auto;
+      }
+ #fb-root{
+     margin-left:auto;
+     margin-right:auto;
+     text-align: center;
+ }
+
+.bakeryproducts-container{
+    max-width: 960px;
+    float: left;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.bakeryproducts{
+    width: 30%;
+    height: 200px;
+    /*float: left;*/}
+
+.btn{
+    width:100%; 
+}    
+
+.cakes{
+    margin: auto;
+  width: auto;
+  height: auto;
+}
+.cakes-container{
+    top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+
+}
